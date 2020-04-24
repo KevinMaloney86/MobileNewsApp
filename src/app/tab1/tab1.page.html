@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title align="center">
+      News
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ul style="list-style: none;">
+    <li *ngFor = "let news of newsData">
+    <h2>{{news.title}}</h2> 
+    <p>{{news.author}}</p>
+    <a href="{{news.url}}">
+    <img src="{{news.urlToImage}}">
+    </a>
+    <h5>{{news.description}}</h5>
+    
+    
+    </li>
+  </ul>  
+  
+</ion-content>

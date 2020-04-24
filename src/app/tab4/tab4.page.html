@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title align="center">
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>Top Stories</h1>
+  <h4>COVid-19</h4>
+  <ul>
+  <li *ngFor = "let get of getData">
+    <a href="{{get.url}}">
+      <ion-text color="danger">
+  <p>{{get.title}}</p> 
+</ion-text>
+  </a>
+
+  </li>
+</ul>
+</ion-content>

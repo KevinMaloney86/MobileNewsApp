@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title align="center">
+      International
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ul style="list-style: none;">
+    <li *ngFor = "let inter of interData">
+    <h2>{{inter.title}}</h2> 
+    <p>{{inter.author}}</p>
+    <a href="{{inter.url}}">
+    <img src="{{inter.urlToImage}}">
+    </a>
+    <h5>{{inter.description}}</h5>
+  
+    
+    </li>
+  </ul>  
+  
+</ion-content>

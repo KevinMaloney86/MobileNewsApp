@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title align="center">
+      Tech News
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ul style="list-style: none;">
+    <li *ngFor = "let tech of techData">
+      <h2>{{tech.title}}</h2> 
+      <p>{{tech.author}}</p>
+      <a href="{{tech.url}}">
+      <img src="{{tech.urlToImage}}">
+      </a>
+      <h5>{{tech.description}}</h5>
+    
+      
+      </li>
+  </ul>
+
+
+</ion-content>
